@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_pasives"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="172dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/pasives"
+            app:layout_constraintEnd_toStartOf="@+id/button_actives"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_actives"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="172dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/actives"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_pasives"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_products"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="94dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/actives"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

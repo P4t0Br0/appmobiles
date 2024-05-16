@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MenuFragment">
+
+    <fragment
+        android:id="@+id/MenuFragment"
+        android:name="com.example.appmobiles.MenuFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_menu">
+
+        <action
+            android:id="@+id/action_MenuFragment_to_ActivesFragment"
+            app:destination="@id/ActivesFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_PasivesFragment2"
+            app:destination="@id/PasivesFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_ProductsFragment"
+            app:destination="@id/ProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ActivesFragment"
+        android:name="com.example.appmobiles.ActivesFragment"
+        android:label="actives_fragment_label"
+        tools:layout="@layout/fragment_actives"/>
+    <fragment
+        android:id="@+id/PasivesFragment"
+        android:name="com.example.appmobiles.PasivesFragment"
+        android:label="pasives_fragment_label"
+        tools:layout="@layout/fragment_pasives"/>
+    <fragment
+        android:id="@+id/ProductsFragment"
+        android:name="com.example.appmobiles.ProductsFragment"
+        android:label="products_fragment_label"
+        tools:layout="@layout/fragment_products"/>
+</navigation>
